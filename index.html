@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REI B U R G U E R</title>
+    <link rel="short cut icon" href="img/rei hamburguer icone.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ 
+      
+      <header>
+          <nav id="menu-btn">
+            <div class="frame">
+      
+              <img src="img/logo.png" alt="" width="70px">
+              <ul>
+                <li><a href="index.html"class="custom-btn btn-8"><span>Home</span></a></li>
+                <li><a href="promocao.html"class="custom-btn btn-8"><span>Promoção</span></a></li>
+                <li><a href="contato.html"class="custom-btn btn-8"><span>Contato</span></a></li>
+              </ul>
+      
+            </div>
+              <div class="icons">
+
+                  <a href="carrinho.html"><i class="fa fa-shopping-cart" aria-hidden="true" ></i></a>
+                  <a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+              </div>
+          </nav>
+      </header>
+
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <li><a href="index.html"class="custom-btn btn-8"><span>Home</span></a></li>
+        <li><a href="promocao.html"class="custom-btn btn-8"><span>Promoção</span></a></li>
+        <li><a href="contato.html"class="custom-btn btn-8"><span>Contato</span></a></li>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>  
+        
+      </div>
+
+      
+      <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="img/slide1.png" >
+          </div>
+      
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="img/slide2.png">
+          </div>
+      
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="img/slide3.png">
+          </div>
+      
+          </div>
+          <br>
+      
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+      
+          <script>
+          let slideIndex = 0;
+          showSlides();
+      
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 5000);
+          }
+          </script>
+          <div class="quem_somos">
+              <img src="img/rei hamburguer icone.png" alt="">
+              <div>
+                  <h2 id="fonte">Quem somos</h2>
+                  <p>Somos a melhor hamburgueria da região.</p>
+                  <p>Temos todo cuidado na hora de preparar seu hambúrguer.</p>
+                  <p>Selecionamos os produtos frescos e de qualidade. </p>
+              </div>
+      
+          </div>
+
+              <img src="img/Monte do seu jeito.png" alt="">
+
+
+              <h1 id="fonte">Ambiente</h1>
+
+              <div class="ambiente">
+          
+                <div class="ambiente">
+                  <img src="img/ambiente1.png" alt="" width="500px" >
+                </div>
+                <div class="ambiente">
+                  <img src="img/ambiente2.png" alt="" width="800px">
+                </div>
+              </div>
+
+              <img src="img/contate.png" alt="">
+
+             
+              <div class="contate">
+                <div class="img-1">
+                  <img src="img/logo.png" alt="">
+                  <p class="text">Copyright © 2023 REI B U R G U E R - Todos os direitos reservados</p>
+                  <p>Desenvolvido por: Maria Eduarda Santos Garcia </p>
+                </div>
+                <div class='contato-1'>
+                  <h2>Contate-nos</h2>
+                  <p><i class="fa fa-phone-square" aria-hidden="true"></i>+123-456-7890</p>
+                  <p><i class="fa fa-globe" aria-hidden="true"></i>www.reiburguer.com</p>
+                  <p><i class="fa fa-instagram" aria-hidden="true"></i>@reiburguer.com</p>
+                  <p><i class="fa fa-map-marker" aria-hidden="true"></i>123 Anywhere ST., Any City, ST 12345</p>
+                  
+      
+                </div>
+      
+              </div>
+
+
+          
+              
+          
+</body>
+</html>
+<script src="script.js"></script>

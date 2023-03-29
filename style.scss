@@ -1,0 +1,51 @@
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 2.8rem;
+    border-radius: 5rem;
+    border-top-left-radius: 0;
+    border:$border;
+    cursor: pointer;
+    background: none;
+    color:$black;
+    font-size: 1.7rem;
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+
+&::before{
+      content: '';
+      position: absolute;
+      top:0; left:0;
+      height: 100%;
+      width:100%;
+      background: $black;
+      z-index: -1;
+      transition: .2s linear;
+      clip-path: circle(0% at 0% 5%);
+    }
+    
+.btn{
+        @include form-btn();
+        margin:1.5rem 0;
+      }
+  
+    &:hover::before{
+      clip-path: circle(100%);
+    }
+  
+    &:hover{
+      color:$white;
+    }
+  }
+  .icons a,
+  .icons div{
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color:$black;
+    cursor: pointer;
+
+    &:hover{
+      color:$carrot-color;
+    }
+  }
